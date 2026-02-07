@@ -1,0 +1,876 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --primary-bg: #021c49;
+  --secondary-bg: #30a8de;
+  --text-color: #ffffff;
+  --dark-textcolor: #0c022f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1490px;
+  height: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+}
+header {
+  padding-top: 5px;
+  background: var(--primary-bg);
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+/*=================
+
+Navbar Section
+
+===================
+*/
+
+nav,
+.navbar-collapse,
+.navbar-collapse > ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-collapse {
+  flex-grow: 1;
+}
+
+.navbar-collapse > ul {
+  margin-left: auto;
+}
+
+.nav-items {
+  margin-left: 55px;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+/*=======================================
+
+Banner section
+
+===========================================
+*/
+
+.banner-sec {
+  /* min-height: calc(100vh - 133.57px); */
+  min-height: 100vh;
+  background: url(../assets/backimg.png) no-repeat center/ cover;
+  display: flex;
+  align-items: center;
+}
+
+.sub-heading {
+  font-size: 27px;
+  color: var(--dark-textcolor);
+  letter-spacing: 10x;
+}
+
+.title1 {
+  font-size: 80px;
+  font-family: Lato-semibold, sans-serif;
+  color: var(--primary-bg);
+}
+.secondary-btn {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 18px 38px;
+  color: var(--primary-bg);
+}
+
+.contact-btn {
+  background-color: var(--secondary-bg);
+  color: var(--text-color);
+  border-radius: 100px;
+  padding: 18px 38px;
+}
+
+.banner-sec .title1 {
+  margin: 5px 0 3px;
+}
+
+.banner-sec .sub-title {
+  font-size: 43px;
+  color: var(--dark-textcolor);
+  letter-spacing: 2.5px;
+  margin-bottom: 32px;
+}
+
+.primary-btn {
+  background: var(--secondary-bg);
+  color: var(--text-color);
+  border-radius: 100px;
+  padding: 18px 38px;
+  margin-left: 40px;
+}
+.primary-btn:hover {
+  color: #021c49;
+  background-color: white;
+}
+
+.contact-btn:hover {
+  color: #021c49;
+  background-color: white;
+}
+
+/*-------------------------------------Testimomy-section-------------------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  /*1950px for everest*/
+  max-width: 1490px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* height: 100%; */
+}
+.test-sec {
+  padding: 95px 0 150px;
+}
+.test,
+.test-hdr p {
+  text-align: center;
+}
+.test-client {
+  font-size: 37px;
+}
+.test-cntn-hdr {
+  font-size: 18px;
+}
+.test-rev {
+  font-size: 26px;
+}
+.test-cntn {
+  max-width: 406px;
+  margin: 0 auto;
+  /* margin-bottom: 50px; */
+}
+
+.col-4 > .star-icon {
+  margin-bottom: 18px;
+}
+
+.test-rev-cntn {
+  max-width: 406px;
+  /* margin: 0 auto; */
+  margin-top: 18px;
+}
+
+.card-items {
+  display: flex;
+}
+.card-items > .colon-img {
+  margin-left: auto;
+}
+
+.card-items > .user-icon {
+  margin-top: 21px;
+}
+.card-items > .user-name {
+  justify-content: center;
+}
+.test-cntn {
+  max-width: 467px;
+}
+
+.test-card {
+  display: flex;
+  align-items: center;
+  max-width: 467px;
+  padding: 46px 30px 30px;
+  border: 1px solid;
+  border-radius: 21px;
+}
+
+.test > .test-cntn-hdr {
+  margin: 13px 0 50px;
+}
+.btn-test {
+  text-align: center;
+}
+.rev-btn {
+  color: #ffffff;
+  background-color: #2863ca;
+  padding: 18px 30px;
+  border-radius: 100px;
+}
+
+.view-all-btn {
+  color: #02132f;
+  border: 1px solid #021c49;
+  padding: 18px 35px;
+  border-radius: 100px;
+}
+.btn-test {
+  margin-top: 74px;
+}
+
+/*------------------------appointment sec--------------------*/
+.apt-sec {
+  max-width: 1460px;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+h2 {
+  font-size: 37px;
+  margin-bottom: 25px;
+}
+
+.apt-cntn > .primary-btn {
+  padding: 18px 56px;
+  border-radius: 50px;
+  border: 1px solid white;
+  color: white;
+  margin-bottom: 100px;
+}
+.apt-cntn {
+  max-width: 775px;
+  height: 100px;
+
+  margin-left: auto;
+}
+.apt-wrpr {
+  background: url(../assets/wrpr-img.png) center/cover no-repeat;
+  padding: 79px 59px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.primary-btn:hover {
+  color: #021c49;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.apt-float-circle {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  background: linear-gradient(to top, #2863ca, #0744ae);
+  opacity: 0.3;
+  position: absolute;
+  right: -15px;
+  top: -42px;
+  z-index: 1;
+}
+
+.apt {
+  position: relative;
+}
+
+/* ---------------12-02-26-----services section------------*/
+
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+}
+:root {
+  --primary-color: #021c49;
+}
+.row {
+  display: flex;
+  text-wrap: wrap;
+  margin: 0 -15px;
+  /* height: 100vh; */
+}
+
+.col-4 {
+  width: calc(8.33% * 4);
+  padding: 0 15px;
+}
+.col-3 {
+  width: calc(8.33% * 3);
+  padding: 0 15px;
+}
+.col-2 {
+  width: calc(8.33% * 2);
+  padding: 0 15px;
+}
+.col-6 {
+  width: calc(8.33% * 6);
+  padding: 0 15px;
+}
+.col-8 {
+  width: calc(8.33% * 8);
+  padding: 0 15px;
+}
+
+.ser-section {
+  padding: 95px 0 101px;
+  background-color: var(--primary-color);
+}
+.mb-4 {
+  margin-bottom: 29px;
+}
+.ser-card {
+  /* max-width: 467px; */
+  padding: 25px 32px;
+  border-radius: 21px;
+  background: linear-gradient(to bottom, #2863ca, #0744ae);
+}
+
+.ser-card p,
+.ser-card a,
+.ser-card-hdr {
+  color: white;
+}
+
+.ser-card-hdr {
+  text-transform: uppercase;
+}
+.ser-card a {
+  margin-top: 24px;
+}
+.services-hdr {
+  margin-top: 95px;
+}
+.ser-card-hdr {
+  margin: 14px 0 9px 0;
+}
+.services-hdr,
+.services-hdr a {
+  color: white;
+}
+/* .ser-card img {
+  width: 52px;
+  height: 52px;
+} */
+.services-hdr a {
+  border: 1px solid white;
+  border-radius: 100px;
+  text-decoration: none;
+  padding: 18px 43px 17px 48px;
+  margin-top: 31px;
+  font-family: "Lato", sans-serif;
+}
+
+/*----------------------------about-section-------------------------*/
+
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+}
+.about-sec {
+  background: url(../assets/about-img.png) no-repeat top/cover;
+  padding: 77px 0 89px;
+  font-family: "Lato", sans-serif;
+}
+
+.about-card {
+  /* border: 1px solid; */
+  border-radius: 25px;
+  color: white;
+  background: var(--primary-color);
+  padding: 62px 71px;
+  max-width: 662px;
+  margin-left: auto;
+}
+
+.about-card {
+  margin-top: 42px;
+}
+.about-card a {
+  color: #ffff;
+  background-color: #30a8de;
+  border-radius: 100px;
+  margin-top: 34px;
+  padding: 18px 40px;
+}
+
+.about-hdr {
+  max-width: 768px;
+  margin-left: auto;
+  font-size: 26px;
+}
+.about-sub-hdr {
+  font-size: 37px;
+} /* 
+.row {
+  flex-direction: column;
+} */
+
+/*-------------------------------------------Footer-Section---------------------------------*/
+
+footer {
+  background: var(--primary-color);
+  padding-top: 100px;
+}
+
+.footer-logo {
+  margin-bottom: 16px;
+}
+
+.footer-logo > a {
+  max-width: 301px;
+}
+
+footer .row {
+  align-items: center;
+}
+
+.footer-logo > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+.social-links > li {
+  margin-left: 18px;
+}
+
+.footer-links:hover svg path {
+  fill: var(--secondary-bg);
+}
+
+.footer-hdr {
+  font-size: 26px;
+  color: var(--text-color);
+  letter-spacing: 5px;
+  margin-bottom: 17px;
+}
+
+.footer-links-lists > li {
+  margin-bottom: 5px;
+}
+.footer-top {
+  margin-bottom: 34px;
+}
+.footer-btm {
+  padding: 43px 0;
+  text-align: center;
+  color: var(--text-color);
+  border-top: 1px solid #274c8e;
+}
+
+/*----------------------------------------------------------------------------media query-----------------------------------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+  /*----------------------------footer section----------------------------*/
+  .col-2,
+  .col-3 {
+    width: 18%;
+  }
+
+  .footer-coloumn {
+    margin-bottom: 30px;
+  }
+  .footer-logo > a {
+    max-width: 201px;
+  }
+  .footer-hdr {
+    font-size: 10px;
+  }
+  .footer-links {
+    font-size: 8px;
+  }
+  /*-----------------------------------------testimonial section----------------------------------------*/
+
+  .col-4 {
+    width: 100%;
+  }
+  .test-card {
+    margin-bottom: 10px;
+  }
+  .apt-wrpr {
+    padding: 10px;
+    height: 190px;
+    width: 80%;
+    object-fit: contain;
+  }
+  .apt-float-circle {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #2863ca, #0744ae);
+    opacity: 0.3;
+    position: absolute;
+    right: 190px;
+    top: -20px;
+    z-index: 1;
+  }
+
+  .apt {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*---------------------------------testimonial section----------------------------------------------*/
+  .test-card {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .apt-cntn h2 {
+    font-size: 28px;
+  }
+  .test-rev {
+    font-size: 20px;
+  }
+  .test-client {
+    font-size: 28px;
+  }
+  .test-cntn-hdr {
+    font-size: 16px;
+  }
+
+  /*-----------------------------------footer-section--------------------------*/
+  .footer-logo > a {
+    width: 250px;
+  }
+
+  .col-2,
+  .col-3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /*------------------------------------navbar-section---------------------*/
+  .navbar-collapse {
+    display: none;
+  }
+  .menu {
+    display: block;
+    margin-right: 10px;
+    margin-left: auto;
+    background-color: var(--text-color);
+    position: relative;
+    z-index: 99;
+  }
+
+  input[type="checkbox"]:checked ~ .navbar-collapse {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    right: 0;
+    background: var(--primary-color);
+    padding-top: 134px;
+  }
+  .navbar-collapse > ul {
+    flex-direction: column;
+  }
+  .nav-items {
+    margin: 0 0 20px;
+  }
+  .nav-btn {
+    text-align: center;
+  }
+  .primary-btn {
+    margin: 0;
+  }
+
+  .secondary-btn {
+    margin-top: 20px;
+  }
+  /*-------------------------------------testimonial section------------------------------------------*/
+
+  .row {
+    flex-direction: column;
+  }
+  .col-4 > .test-card {
+    width: 100%;
+  }
+
+  .apt-wrpr {
+    padding: 10px;
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+    /* text-align: end; */
+  }
+
+  .apt-cntn {
+    text-align: end;
+  }
+
+  .apt-float-circle {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #2863ca, #0744ae);
+    opacity: 0.3;
+    position: absolute;
+    right: -12px;
+    top: -20px;
+    z-index: 1;
+  }
+
+  .apt {
+    position: relative;
+  }
+
+  /*----------------------------------------------------------footer section-------------------------------------*/
+
+  .footer-logo > a {
+    width: 101px;
+  }
+  .footer-hdr {
+    font-size: 10px;
+  }
+  .footer-links {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /*----------------------------------Navbar-section-----------------------------*/
+  .navbar-collapse {
+    width: 90%;
+  }
+  .menu {
+    margin-right: 20px;
+  }
+  .nav-logo > a {
+    width: 102px;
+  }
+
+  .navbar-collapse {
+    width: 90%;
+  }
+  .nav-logo > a {
+    width: 102px;
+  }
+
+  /*--------------------------------------banner section------------------------------*/
+
+  .sub-heading {
+    font-size: 20px;
+  }
+  .banner-sec .title1 {
+    font-size: 30px;
+  }
+  .banner-sec .sub-title {
+    font-size: 35px;
+  }
+
+  .banner-sec .contact-btn,
+  .banner-sec .secondary-btn {
+    font-size: 10px;
+  }
+  /*-------------------------------------About Section----------------------------------*/
+  .about-hdr h3 {
+    font-size: 20px;
+  }
+  .about-sub-hdr h2 {
+    font-size: 28px;
+  }
+  .about-cntn {
+    font-size: 10px;
+  }
+  .about-card a {
+    font-size: 10px;
+  }
+  /*--------------------------------------Services section------------------------*/
+  .ser-section .col-4,
+  .ser-section .col-8 {
+    width: 100%;
+  }
+  .ser-section .row {
+    /* flex-direction: column; */
+    flex-wrap: wrap-reverse;
+  }
+  .book-now-btn {
+    margin-bottom: 20px;
+  }
+  .ser-card {
+    /* max-width: 267px; */
+    padding: 15px 12px;
+  }
+  .ser-card-hdr {
+    font-size: 10px;
+  }
+  .hdr-cntn {
+    font-size: 8px;
+  }
+  .ser-card-img {
+    height: 24px;
+    width: 24px;
+  }
+  .hdr-readmore {
+    font-size: 8px;
+  }
+  .services-hdr-cntn {
+    font-size: 28px;
+  }
+  .cntn {
+    width: 250px;
+    font-size: 8px;
+  }
+  .services-hdr > a {
+    font-size: 8px;
+  }
+
+  /*---------------------------------------------Testmonial section-----------------------------*/
+
+  .test-rev {
+    font-size: 20px;
+  }
+  .test-client {
+    font-size: 28px;
+  }
+  .test-cntn-hdr,
+  .test-rev-cntn {
+    font-size: 10px;
+  }
+  .test-cntn {
+    width: 206px;
+    padding: 0;
+  }
+  .test-sec .row {
+    flex-direction: column;
+  }
+  .test-sec .col-4 {
+    width: 100%;
+  }
+  .test-card {
+    max-width: 256px;
+    /* justify-content: center; */
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .card-items {
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  .rev-btn {
+    margin-bottom: 10px;
+  }
+  .btn-test {
+    margin-top: 20px;
+  }
+
+  .apt-float-circle {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    right: 14px;
+    top: -30px;
+  }
+
+  .apt-cntn h2 {
+    font-size: 28px;
+    max-width: 300px;
+    text-align: end;
+    margin: 0;
+  }
+  .apt-cntn > .primary-btn {
+    padding: 10px 36px;
+    font-size: 10px;
+    text-align: end;
+  }
+  .apt-wrpr {
+    width: 350px;
+    padding: 20px;
+    height: 208px;
+    object-fit: contain;
+  }
+
+  /*------------------------------------footer-section--------------------------------*/
+
+  .col-3,
+  .col-4 {
+    width: 100%;
+  }
+  .footer-hdr {
+    margin-top: 20px;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .footer-btm p {
+    font-size: 10px;
+  }
+
+  .apt-cntn h2 {
+    font-size: 20px;
+  }
+  .apt-wrpr {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title1 {
+    font-size: 40px;
+  }
+  .sub-title {
+    font-size: 24px;
+  }
+
+  /*----------------------------------------------Banner section-------------------*/
+  /* .banner-btn {
+    display: flex;
+    align-items: start;
+
+    flex-direction: column;
+  } */
+}
+
+@media screen and (max-width: 375px) {
+  /*-------------------------------------------Testimonial section--------------------------------------*/
+  .apt-sec .apt-wrpr {
+    max-width: 320px;
+    max-height: 200px;
+  }
+  .apt-float-circle {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #2863ca, #0744ae);
+    opacity: 0.3;
+    position: absolute;
+    right: -5px;
+    top: -20px;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .apt-sec .apt-wrpr {
+    max-width: 290px;
+    height: 170px;
+  }
+}
