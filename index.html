@@ -23,10 +23,9 @@
           </a>
         </div>
 
-        <label for="menu" class="menu">
-          <i class="fa-solid fa-bars"></i>
-        </label>
-        <input hidden type="checkbox" id="menu" value="menu" />
+        <div class="menu show">
+          <span></span>
+        </div>
         <div class="navbar-collapse">
           <ul>
             <li class="nav-items">
@@ -451,5 +450,26 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const menu = document.querySelector(".menu");
+      const navbar_collapse = document.querySelector(".navbar-collapse");
+      // console.log(menu, navbar_collapse);
+
+      let collapsed = true;
+
+      menu = addEventListener("click", () => {
+        console.log(menu.classList);
+        if (collapsed) {
+          menu.classList.add("show");
+          navbar_collapse.style.right = "0";
+          collapsed = false;
+        } else {
+          menu.classList.remove("show");
+          navbar_collapse.style.right = "-100%";
+          collapsed = true;
+        }
+      });
+    </script>
   </body>
 </html>

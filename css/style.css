@@ -570,23 +570,63 @@ footer .row {
     display: none;
   }
   .menu {
-    display: block;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
     margin-right: 10px;
     margin-left: auto;
-    background-color: var(--text-color);
+    color: var(--text-color);
     position: relative;
     z-index: 99;
   }
-
-  input[type="checkbox"]:checked ~ .navbar-collapse {
-    display: block;
+  .menu span {
+    height: 2px;
+    background: white;
+    display: inline-block;
     position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s linear;
+  }
+  .menu.show span {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  .menu::after,
+  .menu::before {
+    content: "";
+    height: 2px;
+    background: white;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: 0.5s linear;
+  }
+  .menu.show::after {
+    transform: rotate(45deg) translate(13px);
+  }
+  .menu.show::before {
+    transform: rotate(-45deg) translate(13px);
+  }
+  .menu::before {
+    bottom: -5px;
+  }
+  .menu::after {
+    top: -5px;
+  }
+  .navbar-collapse {
+    display: block;
+    position: fixed;
     top: 0;
     bottom: 0;
     width: 60%;
-    right: 0;
+    right: -100%;
     background: var(--primary-color);
     padding-top: 134px;
+    transition: 0.5s linear;
   }
   .navbar-collapse > ul {
     flex-direction: column;
